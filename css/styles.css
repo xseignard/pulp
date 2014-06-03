@@ -1,0 +1,28 @@
+body {
+	background-color: #fff;
+	margin: 0;
+}
+#container {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.cycle {
+	position: absolute;
+}
+.vert {
+	width: 1600px;
+	height: 900px;
+	margin-bottom: 0;
+}
+.simply-scroll-clip {
+	width: 100%!important;
+	height: 100%!important;
+}
+.simply-scroll-btn {
+	display: none!important;
+}
+.noCursor {
+	cursor: none;
+}

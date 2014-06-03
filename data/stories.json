@@ -1,0 +1,51 @@
+[
+	{
+		"id":"penates",
+		"name":"Pénates, Teckel et Iba",
+		"count":53,
+		"fx": "scrollVert"
+	},
+	{
+		"id":"renarde",
+		"name":"La renarde",
+		"count":52,
+		"fx": "scrollHorz"
+	},
+	{
+		"id":"la_boite",
+		"name":"La Boîte",
+		"count":85,
+		"fx": "scrollHorz"
+	},
+	{
+		"id":"hysteria",
+		"name":"Hystéria",
+		"count":20,
+		"fx": "none"
+	},
+	{
+		"id":"les_experts",
+		"name":"Les Experts",
+		"count":60,
+		"fx": "fade"
+	},
+	{
+		"id":"otto",
+		"name":"Otto le sorcier",
+		"count":30,
+		"fx": "fade"
+	},
+	{
+		"id":"shoubily",
+		"name":"Shoubily",
+		"count":65,
+		"fx": "fade"
+	},
+	{
+		"id":"zappoto",
+		"name":"Zappoto",
+		"count":106,
+		"gif":[41,49,58,62,63,74,103,104,105],
+		"fx": "fade"
+	}
+]
