@@ -16,7 +16,7 @@
 		$('body').dblclick(function() {
 			chrome.app.window.current().close();
 		});
-		ui = new Pulp.Ui('zappoto');
+		ui = new Pulp.Ui('otto');
 		var handleData = function(data) {
 			buffer += data;
 			if (buffer.indexOf('#') > -1) {

@@ -33,7 +33,7 @@
 		"id":"otto",
 		"name":"Otto le sorcier",
 		"count":30,
-		"fx": "fade"
+		"fx": "scrollHorz"
 	},
 	{
 		"id":"shoubily",
@@ -46,6 +46,6 @@
 		"name":"Zappoto",
 		"count":106,
 		"gif":[41,49,58,62,63,74,103,104,105],
-		"fx": "fade"
+		"fx": "none"
 	}
 ]
