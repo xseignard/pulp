@@ -102,8 +102,8 @@
 					orientation: 'vertical',
 					auto: false,
 					manualMode: 'loop',
-					frameRate: 60,
-					speed: 3
+					frameRate: 30,
+					speed: 6
 				});
 			}, 1000);
 			ui = this;
