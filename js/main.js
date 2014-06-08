@@ -1,7 +1,7 @@
 (function() {
 
 	var stats, serialPort, ui;
-	var debug = true;
+	var debug = false;
 	var buffer = '';
 
 	function update() {
@@ -16,8 +16,7 @@
 		$('body').dblclick(function() {
 			chrome.app.window.current().close();
 		});
-		ui = new Pulp.Ui('penates');
-		//ui = new Pulp.Ui('renarde');
+		ui = new Pulp.Ui('otto');
 		var handleData = function(data) {
 			buffer += data;
 			if (buffer.indexOf('#') > -1) {
