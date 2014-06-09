@@ -17,7 +17,7 @@
 			chrome.app.window.current().close();
 		});
 		document.body.focus();
-		$('body').click();
+		document.body.click();
 		ui = new Pulp.Ui('otto');
 		var handleData = function(data) {
 			buffer += data;
