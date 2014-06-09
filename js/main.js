@@ -17,6 +17,8 @@
 			chrome.app.window.current().close();
 		});
 		ui = new Pulp.Ui('la_boite');
+		document.body.focus();
+		$('body').click();
 		var handleData = function(data) {
 			buffer += data;
 			if (buffer.indexOf('#') > -1) {
