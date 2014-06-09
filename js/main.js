@@ -16,10 +16,10 @@
 		$('body').dblclick(function() {
 			chrome.app.window.current().close();
 		});
-		ui = new Pulp.Ui('shoubily');
+		ui = new Pulp.Ui('la_boite');
 		document.body.focus();
 		document.body.click();
-		document.body.requestPointerLock();
+		document.body.requestPointerLock && document.body.requestPointerLock();
 		var handleData = function(data) {
 			buffer += data;
 			if (buffer.indexOf('#') > -1) {
