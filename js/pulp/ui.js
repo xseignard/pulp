@@ -65,7 +65,7 @@
 	};
 
 	Ui.prototype.initContent = function() {
-		chrome.app.window.current().fullscreen();
+		//chrome.app.window.current().fullscreen();
 		var count = this.story.count;
 		var gif = this.story.gif || [];
 		var storyFolder = 'assets/stories/' + this.story.id;

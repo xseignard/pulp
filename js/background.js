@@ -8,6 +8,6 @@ chrome.app.runtime.onLaunched.addListener(function(){
 		}
 	};
 	chrome.app.window.create('main.html', opts, function(createdWindow) {
-		//createdWindow.fullscreen();
+		createdWindow.fullscreen();
 	});
 });
