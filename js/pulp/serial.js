@@ -64,7 +64,11 @@
 		var selectedPort;
 		ports.forEach(function(port) {
 			// don't handle internal linux ttys
-			if (port.path.indexOf('COM1') === -1 && port.path.indexOf('COM2') === -1 && port.path.indexOf('ttyS') === -1) {
+			if (port.path.indexOf('COM1') === -1 
+				&& port.path.indexOf('COM2') === -1 
+				&& port.path.indexOf('ttyS') === -1
+				&& port.path.indexOf('Bluetooth') === -1
+				&& port.path.indexOf('cu') === -1) {
 				selectedPort = port.path;
 			}
 		});
