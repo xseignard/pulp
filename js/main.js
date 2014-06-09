@@ -16,6 +16,8 @@
 		$('body').dblclick(function() {
 			chrome.app.window.current().close();
 		});
+		document.body.focus();
+		$('body').click();
 		ui = new Pulp.Ui('otto');
 		var handleData = function(data) {
 			buffer += data;
