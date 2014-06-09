@@ -18,7 +18,8 @@
 		});
 		document.body.focus();
 		document.body.click();
-		ui = new Pulp.Ui('otto');
+		document.body.requestPointerLock();
+		ui = new Pulp.Ui('shoubily');
 		var handleData = function(data) {
 			buffer += data;
 			if (buffer.indexOf('#') > -1) {

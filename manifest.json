@@ -14,5 +14,5 @@
 		"48": "assets/icons/cyclope48.png",
 		"128": "assets/icons/cyclope128.png"
 	},
-	"permissions" : ["serial", "fullscreen", "storage"]
+	"permissions" : ["serial", "fullscreen", "storage", "pointerLock"]
 }
