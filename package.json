@@ -1,0 +1,36 @@
+{
+  "name": "pulp",
+  "version": "1.0.0",
+  "description": "Pulp app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c .eslintrc src",
+    "start": "electron src/main.js",
+    "install": "electron-rebuild",
+    "reload": "live-reload src --port 35729"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xseignard/pulp.git"
+  },
+  "author": "Xavier Seignard <xavier.seignard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xseignard/pulp/issues"
+  },
+  "homepage": "https://github.com/xseignard/pulp#readme",
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-rebuild": "^1.5.7",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "live-reload": "^1.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "serialport": "^4.0.7",
+    "slick-carousel": "^1.6.0",
+    "smoothscroll-polyfill": "^0.3.4"
+  }
+}
