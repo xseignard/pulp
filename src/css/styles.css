@@ -9,6 +9,7 @@ body::-webkit-scrollbar {
 	display: none;
 }
 .slideShow {
+	transform: translate3d(0, 0, 0);
 	height: 100vh;
 }
 .slick-list {
@@ -29,6 +30,7 @@ body::-webkit-scrollbar {
 	height: auto;
 }
 .penates {
+	transform: translate3d(0, 0, 0);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

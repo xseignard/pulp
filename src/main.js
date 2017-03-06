@@ -1,12 +1,16 @@
-const electron = require('electron');
-
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const {
+	app,
+	globalShortcut,
+	BrowserWindow,
+} = require('electron');
 
 const path = require('path');
 const url = require('url');
 
+app.commandLine.appendSwitch('ignore-gpu-blacklist');
+
 let mainWindow;
+let kiosk = false;
 
 const createWindow = () => {
 	mainWindow = new BrowserWindow({ width: 1200, height: 600 });
@@ -16,15 +20,17 @@ const createWindow = () => {
 		slashes: true,
 	}));
 
-	mainWindow.webContents.openDevTools();
-
+	// mainWindow.webContents.openDevTools();
+	globalShortcut.register('Control+F', () => {
+		kiosk = !kiosk;
+		mainWindow.setKiosk(kiosk);
+	});
 	mainWindow.on('closed', () => {
 		mainWindow = null;
 	});
 };
 
 app.on('ready', createWindow);
-
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
 	app.quit();
