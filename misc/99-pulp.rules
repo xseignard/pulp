@@ -1,0 +1,10 @@
+# udev rules for pulp
+# sudo cp 99-pulp.rules /etc/udev/rules.d/
+#
+# then reload udev configuration by executing:
+#   sudo reload udev
+# rr if that doesn't work try:
+#   sudo udevadm control --reload-rules
+#   sudo udevadm trigger
+# Controllers
+SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", SYMLINK+="arduino"
