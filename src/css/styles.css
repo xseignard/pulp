@@ -48,3 +48,6 @@ body::-webkit-scrollbar {
 	background: rgba(50, 50, 50, .5);
 	z-index: 1;
 }
+.hide {
+	display: none;
+}

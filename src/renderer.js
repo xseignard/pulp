@@ -31,9 +31,23 @@ hardware.on('data', (data) => {
 	else $('.slideShow').slick('slickPrev');
 });
 
+// stats.js
+const stats = new Stats();
+stats.showPanel(0);
+stats.dom.classList.add('hide');
+stats.dom.style.left = '';
+stats.dom.style.right = 0;
+document.body.appendChild(stats.dom);
+const animate = () => {
+	stats.begin();
+	stats.end();
+	requestAnimationFrame(animate);
+};
+requestAnimationFrame(animate);
 
 // keydown for testing purpose
 document.onkeydown = (e) => {
+	if (e.keyCode === 83) stats.dom.classList.toggle('hide');
 	if (JSON.parse(localStorage.getItem('story')).id === 'penates') {
 		switch (e.keyCode) {
 			case 39:
@@ -47,19 +61,6 @@ document.onkeydown = (e) => {
 		}
 	}
 };
-
-// stats.js
-const stats = new Stats();
-stats.showPanel(0);
-stats.dom.style.left = '';
-stats.dom.style.right = 0;
-document.body.appendChild(stats.dom);
-const animate = () => {
-	stats.begin();
-	stats.end();
-	requestAnimationFrame(animate);
-};
-requestAnimationFrame(animate);
 
 // handle special clicks
 $('body').click((e) => {
