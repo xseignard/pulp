@@ -4,7 +4,7 @@ const stories = require('./data/stories.json');
 const ui = require('./js/ui');
 const Hardware = require('./js/hardware');
 
-const hardware = new Hardware({ path: '/dev/ttyACM0' });
+const hardware = new Hardware();
 
 hardware.on('ready', () => {
 	console.log('connected!');
