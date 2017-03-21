@@ -39,6 +39,7 @@ void loop() {
 				// bornée entre 0 et 30km/h ici
 				vitesse = constrain(int(360*36/timeElapsed), MIN_SPEED, MAX_SPEED);
 				vitesse = map(vitesse, MIN_SPEED, MAX_SPEED, 0, 100);
+				vitesse = vitesse * 6;
 				if (isForward(current)) {
 					down(vitesse);
 				}

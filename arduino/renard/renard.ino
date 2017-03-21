@@ -1,7 +1,7 @@
 #include "Pulp.h"
 
 int piezo = A0;
-int thresold = 35;
+int thresold = 70;
 
 void setup() {
 	Serial.begin(9600);

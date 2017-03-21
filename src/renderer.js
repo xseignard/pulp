@@ -1,5 +1,5 @@
 const $ = require('jquery');
-const Stats = require('stats.js');
+// const Stats = require('stats.js');
 const stories = require('./data/stories.json');
 const ui = require('./js/ui');
 const Hardware = require('./js/hardware');
@@ -32,22 +32,22 @@ hardware.on('data', (data) => {
 });
 
 // stats.js
-const stats = new Stats();
-stats.showPanel(0);
-stats.dom.classList.add('hide');
-stats.dom.style.left = '';
-stats.dom.style.right = 0;
-document.body.appendChild(stats.dom);
-const animate = () => {
-	stats.begin();
-	stats.end();
-	requestAnimationFrame(animate);
-};
-requestAnimationFrame(animate);
+// const stats = new Stats();
+// stats.showPanel(0);
+// stats.dom.classList.add('hide');
+// stats.dom.style.left = '';
+// stats.dom.style.right = 0;
+// document.body.appendChild(stats.dom);
+// const animate = () => {
+// 	stats.begin();
+// 	stats.end();
+// 	requestAnimationFrame(animate);
+// };
+// requestAnimationFrame(animate);
 
 // keydown for testing purpose
 document.onkeydown = (e) => {
-	if (e.keyCode === 83) stats.dom.classList.toggle('hide');
+	// if (e.keyCode === 83) stats.dom.classList.toggle('hide');
 	if (JSON.parse(localStorage.getItem('story')).id === 'penates') {
 		switch (e.keyCode) {
 			case 39:
