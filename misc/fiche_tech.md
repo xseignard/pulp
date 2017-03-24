@@ -25,4 +25,4 @@
 - Si cela ne suffit toujours pas, vérifiez TOUS les branchements
 - En DERNIER recours, envoyez un texto à Xavier Seignard au 0683037374, il vous rapellera
 
-![menu](menu.jpg)
+![menu](menus.jpg)
